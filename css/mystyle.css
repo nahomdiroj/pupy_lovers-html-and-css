@@ -1,128 +1,149 @@
-img{
-    width: 100%;
-    
-}
-*{
-    padding: 0;
+* {
     margin: 0;
-}
-.container {
-    margin: 0 auto;
-  
+    padding: 0;
+  }
+  img {
     width: 100%;
-
-}
-.container img{
-    padding: 4%;
-}
-body{
-font-family: 'Courier New', Courier, monospace;
-
-}
-/* myheader start */
-.myheader{
-    padding-top: 27px;
-    padding-bottom: 24px;
-    color: white;
+  }
+  .container {
+    margin: 0 auto;
+    padding: 0 auto;
+    width: 100%;
+  }
+  body {
+    font-family: "Courier New", Courier, monospace;
+  }
+  
+  
+  /* Header style start here */
+  
+  .header {
+    background-color: #085070;
+    padding: 30px;
+    height: 5vh;
     text-align: center;
-    width: 100%;  
-    font-weight: 700; 
-    background-color: rgb(2, 75, 75);
-}
+    font-size: 30px;
+    color: #fff;
+    font-weight: 700;
+  }
+  
+  /* Header style start here */
+  
+  /* container starts here */
+  .container {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    /* justify-content: space-between; */
+  }
+  
+  .white-puppy img,.black-puppy img {
+     
+     padding: 4% 0%;
+  }
+  .puppy-missing {
 
-/* myheader end */
-
-/* banner_section start */
-.banner_contener img{
-    width: 100%;   
-}
-.banner_contener{
-    margin-bottom: 84px; 
-}
-/* banner_section end */
-/* 
-/* missing-section start  */
-
-
-.missed-puppy {
-    display: none;  
-}
-
-/* missing-section end */
-
-/* more-section start*/
-.section-more    {
+    display: none;
+  
+  }
+  
+  .container-2 {
+    margin: 0% 10%;
+  
+  }
+ 
+  
+  .wihte-puppy, .balck-puppy{
+    padding: 4% 0%;
+  }
+  
+  
+  .more-puppies {
     text-align: center;
-    margin-top: 50px;
-    margin-bottom: 40px;
-    /* margin-left: 30%; */
-    font-size: 50px;
-}
-/* puppies-section */
-/* .section-puppies .container{ */
-    /* width: 100%; */
-    /* margin-left: 20%;
-    margin-right: 15%;  
-} */
-.sleeping{
-    margin-right: 20px;
-}
-/* .seated{
-    margin-left: 20px;
-}  */
-/* more-section end */
+    padding: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(11, 11, 12);
+  }
+  
+  
 
-/* footer start */
-footer {
-    margin-top: 75px;
-    padding-top: 100px;
-    padding-bottom: 125px;
-    color: white;
-    text-align: center;
-    font-size: 30;
-    background-color: rgb(2, 75, 75);
-}
-/* footer end */
-
-@media(min-width:768px){
+  
+  /* media query starts here */
+  
+  @media (min-width: 768px) {
+    .container {
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 0px;
+    }
+  
+    .puppy-container {
+      width: 100%;
+    }
+    .container  {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+     margin: 3% auto;
+      
+    }
+    .puppy-missing {
+      display: flex;
+      width: 33%;
+      background-color: rgb(211, 35, 64);
+      font-size: 50px;
+      text-align: center;
+      align-items: center;
+    }
+    .white-puppy img,.black-puppy img{
+        height: 100%;
+        padding: 0;
    
- .container {
-    display: flex;
-    justify-content: center;
+    }
+   
+    .container-2 {
+      display: flex;
+      margin-bottom: 2%;
+    }
+ 
+    .wihte-puppy  {
+      width: 45%;
+      margin: 0% 0% 0% 5%;
     
-}
-.white-puppy,
-.missed-puppy,
-.black-puppy{
-    width: 33%;
-}
-.missed-puppy{
-    display: flex;
-    background-color: rgb(204, 38, 77);
-    margin: 10px;
-    align-items: center;
-    text-align: center;
-    font-size: 40px;
-}
+    }
+    .balck-puppy{
+      width: 45%;
+      margin: 0% 5% 0% 0%;
+    }
+  }
+  
+  @media (min-width: 1410px) {
+    .total{
+        display: flex;
+        margin: 0 auto;
+    }
+    .container{
+        margin: 2% 0% 2% 2%;
+        justify-content: center;
+    }
+    .container-2{
+        width: 50%;
+        margin: 2%;
+    }
+    .balck-puppy, .wihte-puppy{
+        padding: 0;
+        margin: 0 auto;
+      }
 
-.section-more  h2{
-    /* text-align: center; */
-    /* margin-top: 50px;
-    margin-bottom: 40px; */
-    /* margin-left: 30%; */
-    font-size: 40px;
-}
-.missing-container .white-puppy{
-   margin-right:20px ;
-}
-}
-
-    
-
-
-
-
-
-
-
-
+    .more-puppies{
+        display: none;
+    }
+    .puppy-missing{
+        margin: 0% 4%;
+    }
+  }
+  
+  /* media query ends here */
